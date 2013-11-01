@@ -37,7 +37,7 @@ def convert_pygments(source):
     language = match.group(1)
     code = match.group(2)
     lexer = get_lexer_by_name(language)
-    formatter = pygments.formatters.HtmlFormatter(cssclass='hll')
+    formatter = pygments.formatters.HtmlFormatter(cssclass='hll', linenos='inline')
     highlighted = pygments.highlight(code, lexer, formatter)
     return _BLOCK_OUTPUT_TEMPLATE % highlighted
   return _SOURCE_BLOCK_PATTERN.sub(replace, source)

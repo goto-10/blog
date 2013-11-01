@@ -1,8 +1,8 @@
 Welcome to the neutrino language blog. [Neutrino](http://ne.utrino.org) is a new
 dynamically typed object-oriented programming language. It's intended to be
 useful for the same kinds of tasks that you would use python or ruby for but to
-be fast enough that it can also be used instead of java and even for some tasks
-you'd use C or C++ for today.
+be fast enough that it can also be used instead of java -- and even in some cases
+C or C++.
 
 Neutrino is being developed by a startup called *goto 10*. Goto 10 consists
 entirely of me, [plesner](http://c7n.p5r.org), and it's really just a different
