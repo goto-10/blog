@@ -16,13 +16,6 @@ _SOURCE_BLOCK_PATTERN = re.compile(r'\[source:(\w*)\](.*)\[/source\]', re.S)
 _BLOCK_OUTPUT_TEMPLATE = '\n\n<div class="%s">%%s</div>\n\n' % _CODE_CLASS
 
 
-# Parses command-line flags.
-def parse_flags(args):
-  parser = optparse.OptionParser()
-  parser.add_option('-i', '--in', dest='_in')
-  return parser.parse_args(args)
-
-
 def get_lexer_by_name(name):
   if name == 'neutrino':
     return pygtrino.NeutrinoLexer()
@@ -49,18 +42,6 @@ def convert_markdown(source):
 
 
 # Does the whole conversion process.
-def process(input=None):
-  source = open(input, "rt").read()
+def convert(source):
   pygmented = convert_pygments(source)
-  markdowned = convert_markdown(pygmented)
-  print markdowned
-
-
-# Main entry-point.
-def main():
-  (flags, args) = parse_flags(sys.argv)
-  process(input=flags._in)
-
-
-if __name__ == '__main__':
-  main()
+  return convert_markdown(pygmented)
