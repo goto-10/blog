@@ -1,4 +1,4 @@
-Welcome to the neeeutrino language blog. [Neutrino](http://ne.utrino.org) is a new
+Welcome to the neutrino language blog. [Neutrino](http://ne.utrino.org) is a new
 dynamically typed object-oriented programming language. It's intended to be
 useful for the same kinds of tasks that you would use python or ruby for but to
 be fast enough that it can also be used instead of java -- and even in some cases
