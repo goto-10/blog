@@ -4,12 +4,12 @@ useful for the same kinds of tasks that you would use python or ruby for but to
 be fast enough that it can also be used instead of java -- and even in some cases
 C or C++.
 
-Neutrino is being developed by a startup called *goto 10*. Goto 10 consists
-entirely of me, [plesner](http://c7n.p5r.org), and it's really just a different
-way of saying that I'm working on this as my full time job. Development is as
-open as I've been able to make it; you can follow it on
-[github](https://github.com/ne-utrino/neutrino/wiki). This blog is where I'll
-post about how the language works and why it's designed as it is.
+Neutrino is being developed by a company called [GOTO 10](http://www.goto-10.dk).
+GOTO 10 consists entirely of me, [plesner](http://c7n.p5r.org), and it's really
+just a different way of saying that I'm working on this as my full time job.
+Development is as open as I've been able to make it; you can follow it on
+[github](https://github.com/goto-10/neutrino/wiki). This blog is where I'll
+post about how the language works.
 
 Before going into details which I'll do in the following posts here's some
 code to give a sense of the flavor of the language.

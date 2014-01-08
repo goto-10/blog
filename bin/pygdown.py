@@ -38,7 +38,7 @@ def convert_pygments(source):
 
 # Convertes markdown to html.
 def convert_markdown(source):
-  return markdown.Markdown().convert(source)
+  return markdown.markdown(source, ['footnotes'])
 
 
 # Does the whole conversion process.
